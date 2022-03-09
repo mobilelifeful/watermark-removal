@@ -39,6 +39,7 @@ def preprocess_image(image, watermark_type):
         print("Image size not supported!!!")
 
     if (preprocessed_mask_image.shape != (0,)):
+        print("               -                   =            +")
         print(image.shape)
         assert image.shape == preprocessed_mask_image.any()
         grid = 8
